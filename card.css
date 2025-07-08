@@ -19,7 +19,7 @@ card{
 	text-align: center;
 	position: relative;
 }
-.card-header{
+.card-header img{
 	width: 100px;
 	height: 100px;
 	margin-top: 20px;
@@ -30,4 +30,21 @@ card{
 }
 .card-body h2{
 	margin-bottom: 5px;
+}
+card-body p{
+	color: #777;
+	padding: 15px;
+}
+.card-footer{
+	background: #fff;
+	padding: 15px;
+	trasition: all 0.4 ease;
+	opacity: 0;
+	trasform: traslateY(0);
+	visibility: hidden;
+}
+.card-hover .card-footer{
+	opacity: 1;
+	transform: traslateY(0);
+	visibility: visible;
 }
